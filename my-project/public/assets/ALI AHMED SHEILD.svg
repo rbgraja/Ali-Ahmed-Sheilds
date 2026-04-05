@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 640" width="1920" height="640">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="50%" style="stop-color:#1e3a5f"/>
+      <stop offset="100%" style="stop-color:#0c4a6e"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="640" fill="url(#bg)"/>
+  <rect width="1920" height="640" fill="url(#shine)"/>
+  <g fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.35">
+    <rect x="120" y="120" width="400" height="400" rx="8" transform="rotate(-6 320 320)"/>
+    <rect x="1400" y="100" width="380" height="440" rx="8" transform="rotate(4 1590 320)"/>
+  </g>
+  <text x="960" y="280" text-anchor="middle" fill="#f8fafc" font-family="system-ui,sans-serif" font-size="72" font-weight="700">ALI AHMED SHIELD</text>
+  <text x="960" y="360" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="28">Acrylic Shields · Custom Key Rings</text>
+  <text x="960" y="420" text-anchor="middle" fill="#64748b" font-family="system-ui,sans-serif" font-size="18">Replace this file in /public/assets with your banner image</text>
+</svg>

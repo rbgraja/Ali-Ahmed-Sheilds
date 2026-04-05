@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+#root {
+  width: 100%;
+  min-height: 100%;
+  font-family: "Inter", system-ui, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes shimmer-slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes backdrop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (min-width: 640px) {
+  @keyframes modal-panel-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer-slide 1.4s ease-in-out infinite;
+}
+
+.animate-backdrop-in {
+  animation: backdrop-in 0.2s ease-out forwards;
+}
+
+.animate-modal-panel {
+  animation: modal-panel-in 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}

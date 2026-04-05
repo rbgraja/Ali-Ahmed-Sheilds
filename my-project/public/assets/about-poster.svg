@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="vid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#334155"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#vid)"/>
+  <circle cx="640" cy="360" r="80" fill="#ffffff" fill-opacity="0.15"/>
+  <polygon points="610,320 610,400 690,360" fill="#f8fafc"/>
+  <text x="640" y="520" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="22">Add about-us.mp4 to /public/assets for your video</text>
+</svg>
