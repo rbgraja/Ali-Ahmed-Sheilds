@@ -107,7 +107,7 @@ export const PRODUCTS = [
 export const INTRO_HEADING = 'Acrylic Shields'
 
 export const INTRO_PARAGRAPH =
-  'Crystal-clear barriers for desks, counters, and open spaces—engineered to protect without blocking light or conversation. Alongside our shields, we craft customized acrylic key rings that carry your brand with the same attention to polish, thickness, and finish. Whether you are outfitting a single reception or a full retail rollout, we help you choose dimensions and materials that look intentional, install cleanly, and stay easy to maintain.'
+  'Crystal-clear acrylic awards and trophies for desks, counters, and open spaces—crafted to celebrate achievements without compromising elegance or visibility. Alongside our awards, we create customized acrylic key rings that carry your brand with the same attention to polish, thickness, and finish. Whether you are recognizing a single achievement or organizing a full corporate award event, we help you choose dimensions and materials that look refined, display beautifully, and stay easy to maintain.'
 
 export const ABOUT_COPY = {
   title: 'About us',
