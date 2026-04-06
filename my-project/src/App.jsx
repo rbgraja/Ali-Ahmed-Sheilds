@@ -3,7 +3,6 @@ import { HeroBanner } from './components/HeroBanner'
 import { IntroSection } from './components/IntroSection'
 import { ProductSection } from './components/ProductSection'
 import { AboutSection } from './components/AboutSection'
-import { ContactSection } from './components/ContactSection'
 import { Footer } from './components/Footer'
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
         <IntroSection />
         <ProductSection />
         <AboutSection />
-        <ContactSection />
       </main>
       <Footer />
     </div>

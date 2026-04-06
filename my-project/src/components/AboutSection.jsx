@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ABOUT_COPY, ABOUT_POSTER_SRC, ABOUT_VIDEO_SRC } from '../data/siteContent'
+import { ABOUT_COPY, ABOUT_POSTER_SRC, ABOUT_VIDEO_SRC, SITE } from '../data/siteContent'
 
 export function AboutSection() {
   const [videoFailed, setVideoFailed] = useState(false)
@@ -11,7 +11,7 @@ export function AboutSection() {
           <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-slate-950 shadow-xl ring-1 ring-slate-900/5">
             {!videoFailed ? (
               <video
-                className="aspect-video w-full object-cover"
+                className="aspect-video w-full object-contain"
                 controls
                 playsInline
                 preload="metadata"
@@ -22,11 +22,7 @@ export function AboutSection() {
               </video>
             ) : (
               <div className="relative aspect-video w-full">
-                <img
-                  src={ABOUT_POSTER_SRC}
-                  alt=""
-                  className="h-full w-full object-cover"
-                />
+                <img src={ABOUT_POSTER_SRC} alt="" className="h-full w-full object-cover" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-slate-950/70 p-6 text-center text-sm text-white">
                   <p className="font-medium">Video could not be played</p>
                   <p className="max-w-sm text-white/80">
@@ -50,7 +46,9 @@ export function AboutSection() {
               ))}
             </div>
             <a
-              href="https://wa.me/923056170385"
+              href={`https://wa.me/${SITE.phoneTel.replace(/\D/g, '')}`}
+              target="_blank"
+              rel="noreferrer noopener"
               className="mt-8 inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:bg-slate-800"
             >
               Start a conversation

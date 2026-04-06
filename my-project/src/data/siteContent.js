@@ -6,12 +6,14 @@ import product005 from '../assets/005.jpeg'
 import product006 from '../assets/006.jpeg'
 import product007 from '../assets/007.jpeg'
 import aboutVideo from '../assets/016.mp4'
-import aboutPoster from '../assets/014.jpeg'
-
+import aboutPoster from '../assets/logo.jpg'
+import introVideo from '../assets/017.mp4'  
 /** Hero banner (from `src/assets`) */
 export const BANNER_SRC = banner
 
-/** About section video + poster (from `src/assets`) */
+/** Intro + About section video & poster (same assets; from `src/assets`) */
+export const INTRO_VIDEO_SRC = introVideo
+export const INTRO_POSTER_SRC = aboutPoster
 export const ABOUT_VIDEO_SRC = aboutVideo
 export const ABOUT_POSTER_SRC = aboutPoster
 
@@ -102,14 +104,10 @@ export const PRODUCTS = [
   },
 ]
 
-export const COMPANY_INTRO = {
-  title: 'Clarity, craft, and protection—built around your brand',
-  paragraphs: [
-    'Ali Ahmed Shield specializes in precision acrylic shields and customized key rings for businesses that care how their spaces look and how their brand feels in hand. From reception desks to retail counters, our barriers are designed to disappear visually while doing their job: keeping people comfortable and conversations clear.',
-    'Our key rings are more than accessories—they are small billboards customers carry every day. Whether you need crystal-clear blanks or fully bespoke shapes with your logo, we focus on clean edges, consistent thickness, and finishes that age well.',
-    'Tell us about your environment, traffic patterns, and brand guidelines. We will recommend materials, dimensions, and production paths that match your timeline and budget—without compromising on the polished presence your customers expect.',
-  ],
-}
+export const INTRO_HEADING = 'Acrylic Shields'
+
+export const INTRO_PARAGRAPH =
+  'Crystal-clear barriers for desks, counters, and open spaces—engineered to protect without blocking light or conversation. Alongside our shields, we craft customized acrylic key rings that carry your brand with the same attention to polish, thickness, and finish. Whether you are outfitting a single reception or a full retail rollout, we help you choose dimensions and materials that look intentional, install cleanly, and stay easy to maintain.'
 
 export const ABOUT_COPY = {
   title: 'About us',
@@ -122,13 +120,7 @@ export const ABOUT_COPY = {
 
 export const SITE = {
   name: 'Ali Ahmed Shield',
-  email: 'rbg.raja123@gmail.com',
-  /** Display format */
   phone: '0305 6170385',
-  /** Use with tel: / WhatsApp links */
   phoneTel: '+923056170385',
-  address: 'Industrial Quarter, Your City',
+  address: 'C43H+7X3 Dhaunkal, Pakistan',
 }
-
-/** FormSubmit forwards submissions to SITE.email (activate link on first submit if prompted). */
-export const CONTACT_FORM_ENDPOINT = `https://formsubmit.co/ajax/${encodeURIComponent(SITE.email)}`

@@ -3,10 +3,10 @@ import { MdPhone, MdWhatsapp, MdLocationOn } from 'react-icons/md'
 import { SITE } from '../data/siteContent'
 
 const social = [
-  { Icon: FaFacebookF, href: 'https://facebook.com', label: 'Facebook' },
-  { Icon: FaInstagram, href: 'https://instagram.com', label: 'Instagram' },
-  { Icon: FaXTwitter, href: 'https://x.com', label: 'X' },
-  { Icon: FaLinkedinIn, href: 'https://linkedin.com', label: 'LinkedIn' },
+  { Icon: FaFacebookF, href: 'https://www.facebook.com/share/1AyzeeYZ7Z/', label: 'Facebook' },
+  // { Icon: FaInstagram, href: 'https://instagram.com', label: 'Instagram' },
+  // { Icon: FaXTwitter, href: 'https://x.com', label: 'X' },
+  // { Icon: FaLinkedinIn, href: 'https://linkedin.com', label: 'LinkedIn' },
 ]
 
 export function Footer() {
@@ -62,10 +62,20 @@ export function Footer() {
                 WhatsApp
               </a>
             </li>
-            <li className="inline-flex items-start gap-2 text-slate-400">
-              <MdLocationOn className="mt-0.5 h-5 w-5 shrink-0 text-sky-400" aria-hidden />
-              {SITE.address}
-            </li>
+            <li className="group">
+  <a
+    href="https://www.google.com/maps/place/32%C2%B024'11.3%22N+74%C2%B007'47.7%22E/@32.4031365,74.1273483,17z"
+    target="_blank"
+    rel="noreferrer noopener"
+    className="inline-flex items-center gap-3 text-slate-400 transition-all duration-300 hover:text-white"
+  >
+    <MdLocationOn className="h-5 w-5 text-sky-400 transition-transform duration-300 group-hover:scale-110" />
+
+    <span className="leading-relaxed">
+      {SITE.address}
+    </span>
+  </a>
+</li>
           </ul>
         </div>
 
@@ -74,7 +84,7 @@ export function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             <li>
               <a href="#products" className="text-slate-300 transition hover:text-white">
-                Featured products
+                Products
               </a>
             </li>
             <li>
@@ -82,11 +92,7 @@ export function Footer() {
                 About us
               </a>
             </li>
-            <li>
-              <a href="#contact" className="text-slate-300 transition hover:text-white">
-                Contact
-              </a>
-            </li>
+
             <li>
               <a href="#top" className="text-slate-300 transition hover:text-white">
                 Back to top
@@ -100,7 +106,7 @@ export function Footer() {
           <p className="mt-4 text-sm leading-relaxed text-slate-400">
             Monday–Friday, 9:00–17:00
             <br />
-            Weekend: contact form or WhatsApp.
+            Weekend: contact WhatsApp.
           </p>
         </div>
       </div>

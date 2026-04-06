@@ -5,7 +5,7 @@ const nav = [
   { label: 'Home', href: '#top' },
   { label: 'Products', href: '#products' },
   { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Contact', href: '#footer' },
 ]
 
 export function Header() {
